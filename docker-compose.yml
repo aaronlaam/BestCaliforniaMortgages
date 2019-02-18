@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bestcaliforniamortgages:
+    image: ${DOCKER_REGISTRY-}bestcaliforniamortgages
+    build:
+      context: .\BestCaliforniaMortgages
+      dockerfile: Dockerfile
